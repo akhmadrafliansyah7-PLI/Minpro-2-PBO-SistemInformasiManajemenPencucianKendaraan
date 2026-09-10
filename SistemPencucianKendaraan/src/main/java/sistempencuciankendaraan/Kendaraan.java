@@ -9,7 +9,7 @@ package sistempencuciankendaraan;
  * @author Lenovo GK
  */
 public class Kendaraan {
-     private String noPlat;
+    private String noPlat;
     private String jenisKendaraan;
     private String merk;
     
