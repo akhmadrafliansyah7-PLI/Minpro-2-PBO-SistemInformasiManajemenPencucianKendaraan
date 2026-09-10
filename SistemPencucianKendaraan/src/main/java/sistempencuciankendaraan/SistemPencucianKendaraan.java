@@ -162,7 +162,7 @@ public class SistemPencucianKendaraan {
     transaksi.getPelanggan().setNama(nama);
     transaksi.getPelanggan().setNoTelepon(noTelepon);
                             
-                            System.out.print("Jenis Pelanggan Baru: ");
+                            System.out.print("Jenis Kendaraan Baru: ");
                             String jenisKendaraan = input.nextLine();
                             
                             System.out.print("Merk Kendaraan Baru: ");
