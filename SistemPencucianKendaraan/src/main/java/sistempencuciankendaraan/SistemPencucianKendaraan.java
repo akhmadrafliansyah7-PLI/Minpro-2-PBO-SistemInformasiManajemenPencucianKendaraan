@@ -20,7 +20,7 @@ public class SistemPencucianKendaraan {
     static void tambahData(){
         
         System.out.println("\n=== Tambah Data Pencucian ===");
-        
+
         String idTransaksi;
         
         while (true){
