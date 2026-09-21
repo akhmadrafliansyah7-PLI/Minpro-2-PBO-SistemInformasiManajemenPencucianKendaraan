@@ -2,13 +2,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package sistempencuciankendaraan;
+package sistempencuciankendaraan.Model;
+
+import sistempencuciankendaraan.Model.Pelanggan;
+import sistempencuciankendaraan.Model.Layanan;
+import sistempencuciankendaraan.Model.Kendaraan;
 
 /**
  *
  * @author Lenovo GK
  */
 public class Transaksi {
+    
     private String idTransaksi;
     private Pelanggan pelanggan;
     private Kendaraan kendaraan;
@@ -45,7 +50,6 @@ public class Transaksi {
     public void setLayanan(Layanan layanan) {
         this.layanan = layanan;
     }
-    
     public void tampilkanData(){
         
         System.out.println("ID Transaksi : " + idTransaksi);
@@ -53,11 +57,10 @@ public class Transaksi {
         System.out.println("Nama Pelanggan : " + pelanggan.getNama());
         System.out.println("No.Telepon : " + pelanggan.getNoTelepon());
         System.out.println("Nomor Plat : " + kendaraan.getNoPlat());
-        System.out.println("Jenis Kendaraan : " + kendaraan.getJenisKendaraan());
+        System.out.println("Detail Kendaraan : " + kendaraan.getDetailKendaraan());
         System.out.println("Merk Kendaraan : " + kendaraan.getMerk());
-        
-    System.out.println("Layanan : " + layanan.getNamaLayanan());
-    
-    System.out.println("Harga Rp : " + layanan.getHarga());
+        System.out.println("Kode Layanan : " + layanan.getKodeLayanan());
+        System.out.println("Layanan : " + layanan.getNamaLayanan());
+        System.out.println("Harga Rp : " + layanan.getHarga());
     }
 }

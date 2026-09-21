@@ -6,6 +6,13 @@ package sistempencuciankendaraan.Controller;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import sistempencuciankendaraan.Model.Kendaraan;
+import sistempencuciankendaraan.Model.Layanan;
+import sistempencuciankendaraan.Model.Mobil;
+import sistempencuciankendaraan.Model.Motor;
+import sistempencuciankendaraan.Model.Pelanggan;
+import sistempencuciankendaraan.Model.Transaksi;
+import sistempencuciankendaraan.View.MenuView;
 /**
  *
  * @author Lenovo GK
@@ -228,4 +235,184 @@ public void tambahData(){
     daftarTransaksi.add(transaksi);
 
     System.out.println("\nData Pencucian Berhasil Ditambahkan!");
+}
+public void tampilkanData(){
+
+    System.out.println("\n=== Data Pencucian Kendaraan ===");
+
+    if(daftarTransaksi.isEmpty()){
+        System.out.println("Belum Ada Data Pencucian");
+    }else{
+
+        for (Transaksi transaksi : daftarTransaksi){
+            transaksi.tampilkanData();
+
+System.out.println("---------------------------------");
+        }
+    }
+}
+public void ubahData(){
+
+    System.out.println("\n=== Ubah Data Pencucian ===");
+
+    System.out.println("Masukan ID Transaksi: ");
+    String idTransaksi = input.nextLine();
+
+    for (Transaksi transaksi : daftarTransaksi){
+
+        if(transaksi.getIdTransaksi().equals(idTransaksi)) {
+
+                        System.out.print("Nama Pelanggan Baru: ");
+                        String nama = input.nextLine();
+
+                        System.out.print("Nomor Telepon Baru: ");
+                        String noTelepon = input.nextLine();
+
+transaksi.getPelanggan().setNama(nama);
+transaksi.getPelanggan().setNoTelepon(noTelepon);
+
+                        System.out.print("noPlat Baru: ");
+                        String noPlat = input.nextLine();
+
+                        System.out.print("Merk Kendaraan Baru: ");
+                        String merk = input.nextLine();
+
+                        System.out.print("warna Kendaraan Baru: ");
+                        String warna = input.nextLine();
+
+                        System.out.println("\nJenis Kendaraan Baru: ");
+                        System.out.println("1. Mobil");
+                        System.out.println("2. Motor");
+
+                        int detailKendaraanBaru;
+                        Kendaraan kendaraanBaru = null;
+
+                        while (true){
+
+                            System.out.println("pilih: ");
+
+                            if (!input.hasNextInt()){
+                                System.out.println("Input Harus Berupa Angka");
+                                input.nextLine();
+                                continue;
+                            }
+                            detailKendaraanBaru = input.nextInt();
+                            input.nextLine();
+
+
+                        if(detailKendaraanBaru == 1){
+                            int jumlahRoda;
+
+                            while (true){
+                                System.out.print("Jumlah Roda: ");
+
+                                if (input.hasNextInt()){
+                                    jumlahRoda = input.nextInt();
+                                    input.nextLine();
+                                    break;
+                                }else{
+                                 System.out.println("Jumlah pintu harus berupa angka");
+                                input.nextLine();
+                                }
+                            }
+                            kendaraanBaru = new Mobil(noPlat, merk, warna, jumlahRoda);
+                            break;
+                        }else if
+                          (detailKendaraanBaru == 2){
+                            int cc;
+
+                            while (true){
+                                System.out.print("cc : ");
+
+                                if (input.hasNextInt()){
+                                    cc = input.nextInt();
+                                    input.nextLine();
+                                    break;
+                                }else{
+                                    System.out.println("cc harus berupa angka");
+                                    input.nextLine();
+                                }
+                            }
+                            kendaraanBaru = new Motor(noPlat, merk, warna, cc);
+                            break;
+                        }else{
+                            System.out.println("Jenis Kendaraan Tidak Valid");
+                            return;
+                        }
+                    }
+transaksi.setKendaraan(kendaraanBaru);
+transaksi.getKendaraan().setNoPlat(noPlat);
+transaksi.getKendaraan().setMerk(merk);
+transaksi.getKendaraan().setWarna(warna);
+
+                    System.out.println("\nPilih Layanan Baru: ");
+                    System.out.println("1. Cuci Reguler Motor - Rp20000");
+                    System.out.println("2. Cuci Reguler Mobil - Rp50000");
+                    System.out.println("3. Cuci Premium Motor - Rp35000");
+                    System.out.println("4. Cuci Premium Mobil - Rp75000");
+
+                    Layanan layananBaru;
+
+                    while (true){
+
+                        System.out.println("Pilihan Layanan: ");
+
+                        if (!input.hasNextInt()){
+                            System.out.println("Input Harus Berupa Angka");
+                            input.nextLine();
+                            continue;
+                        }
+
+                        int pilihanLayananBaru = input.nextInt();
+                        input.nextLine();
+
+                        if (pilihanLayananBaru == 1){
+                        layananBaru = new Layanan("LY001", "Cuci Reguler Motor", 20000);
+                            break;
+
+                        }else if (pilihanLayananBaru == 2){
+                            layananBaru = new Layanan("LY002", "Cuci Reguler Mobil", 50000);
+                            break;
+
+                        }else if (pilihanLayananBaru == 3){
+                            layananBaru =new Layanan("LY003", "Cuci Premium Motor", 35000);
+                            break;
+
+                        }else if (pilihanLayananBaru == 4){
+                            layananBaru =new Layanan("LY004", "Cuci Premium Mobil", 75000);
+                            break;
+
+                        }else{
+                            System.out.println("Pilihan Layanan Tidak Valid! pilih 1-4.");
+                        }
+                    }
+transaksi.setLayanan(layananBaru);
+
+                    System.out.print("\nData Berhasil Diubah");
+                    return;
+                }
+            }
+            System.out.println("ID Transaksi Tidak Ditemukan.");
+        }
+
+public void hapusData(){
+
+    System.out.println("\n=== Hapus Data Pencucian ===");
+
+    System.out.println("Masukan ID Transaksi");
+    String idTransaksi = input.nextLine();
+
+    for (int i = 0; i < daftarTransaksi.size(); i++) {
+
+        if (daftarTransaksi.get(i).getIdTransaksi().equals(idTransaksi)) {
+
+            daftarTransaksi.remove(i);
+
+            System.out.println("\nData Berhasil Dihapus");
+            return;
+        }
+    }
+
+    System.out.println("ID Transaksi Tidak Ditemukan.");
+}
 }
