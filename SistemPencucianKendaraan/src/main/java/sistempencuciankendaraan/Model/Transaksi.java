@@ -55,11 +55,9 @@ public class Transaksi {
         System.out.println("ID Transaksi : " + idTransaksi);
         System.out.println("ID Pelanggan : " + pelanggan.getIdPelanggan());
         System.out.println("Nama Pelanggan : " + pelanggan.getNama());
-        System.out.println("No.Telepon : " + pelanggan.getNoTelepon());
-        System.out.println("Nomor Plat : " + kendaraan.getNoPlat());
-        System.out.println("Detail Kendaraan : " + kendaraan.getDetailKendaraan());
-        System.out.println("Merk Kendaraan : " + kendaraan.getMerk());
-        System.out.println("Kode Layanan : " + layanan.getKodeLayanan());
+        System.out.println("Nomor Telepon : " + pelanggan.getNoTelepon());
+        kendaraan.tampilkanData();
+        
         System.out.println("Layanan : " + layanan.getNamaLayanan());
         System.out.println("Harga Rp : " + layanan.getHarga());
     }

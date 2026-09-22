@@ -19,9 +19,6 @@ public class Kendaraan {
         this.merk = merk;
         this.warna = warna;
     }
-    public String getDetailKendaraan(){
-        return "kendaraan";
-    }
     public String getNoPlat(){
         return noPlat;
     }
@@ -33,12 +30,19 @@ public class Kendaraan {
     }
     public void setMerk(String merk) {
         this.merk = merk;
-    } 
+    }
     public String getWarna(){
         return warna;
     }
     public void setWarna(String warna) {
         this.warna = warna;
-    } 
+    }
+    public void tampilkanData(){
+        System.out.println("No Plat : " + noPlat);
+   
+System.out.println("Merk : " + merk);
+
+System.out.println("Warna : " + warna);
+    }
 }
 

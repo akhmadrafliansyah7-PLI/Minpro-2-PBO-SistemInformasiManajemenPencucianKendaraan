@@ -18,14 +18,13 @@ public class Motor extends Kendaraan{
         super(noPlat, merk, warna);
         this.cc = cc;
     }
+    
     @Override
-    public String getDetailKendaraan(){
-        return "Motor - " + cc + " cc";
-    }
-    public int getCc(){
-        return cc;
-    }
-    public void setCc(int cc) {
-        this.cc = cc;
+    public void tampilkanData(){
+        super.tampilkanData();
+   
+System.out.println("Jenis Kendaraan : Motor");
+
+System.out.println("CC : " + cc);
     }
 }

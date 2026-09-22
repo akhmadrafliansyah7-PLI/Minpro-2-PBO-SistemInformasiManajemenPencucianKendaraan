@@ -18,13 +18,11 @@ public class Mobil extends Kendaraan{
         this.jumlahRoda = jumlahRoda;
     }
     @Override
-    public String getDetailKendaraan(){
-        return "Mobil - " + jumlahRoda + " Roda";
-    }
-    public int getJumlahRoda(){
-        return jumlahRoda;
-    }
-    public void setJumlahRoda(int jumlahRoda) {
-        this.jumlahRoda = jumlahRoda;
+    public void tampilkanData(){
+        super.tampilkanData();
+   
+System.out.println("Jenis Kendaraan : Mobil");
+
+System.out.println("Jumlah Roda : " + jumlahRoda);
     }
 }

@@ -238,17 +238,16 @@ public void tambahData(){
 }
 public void tampilkanData(){
 
-    System.out.println("\n=== Data Pencucian Kendaraan ===");
-
     if(daftarTransaksi.isEmpty()){
         System.out.println("Belum Ada Data Pencucian");
-    }else{
-
-        for (Transaksi transaksi : daftarTransaksi){
-            transaksi.tampilkanData();
+        return;
+    }
+    System.out.println("\n=== Data Pencucian Kendaraan ===");
+    for (Transaksi transaksi : daftarTransaksi){
+        transaksi.tampilkanData();
 
 System.out.println("---------------------------------");
-        }
+        
     }
 }
 public void ubahData(){
