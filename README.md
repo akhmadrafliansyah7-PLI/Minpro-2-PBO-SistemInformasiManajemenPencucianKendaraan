@@ -35,3 +35,8 @@ dari program. Pengguna dapat memilih salah satu menu dengan memasukkan angka ses
 
    <img width="270" height="595" alt="image" src="https://github.com/user-attachments/assets/d7ab37aa-435b-441f-a2c5-ab16e04498d8" />
 
+2. Tampilkan Data Pencucian
+   
+   Pada menu **Tampilkan Data Pencucian**, sistem akan memeriksa apakah terdapat data transaksi di dalam `ArrayList`. Jika belum            terdapat data, sistem akan menampilkan informasi bahwa belum ada data pencucian. Jika terdapat data, sistem menggunakan perulangan       untuk mengambil setiap transaksi dan menampilkan informasi transaksi, pelanggan, kendaraan, serta layanan yang dipilih.
+
+   
