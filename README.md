@@ -78,3 +78,18 @@ dari program. Pengguna dapat memilih salah satu menu dengan memasukkan angka ses
    - Motor
   
    <img width="327" height="17" alt="image" src="https://github.com/user-attachments/assets/c180bf23-c7b1-4b11-badc-54ee6863e010" />
+
+## Nilai Tambah
+
+1. Struktur MVC
+
+   Program Sistem Pencucian Kendaraan menerapkan struktur MVC (Model, View, Controller) untuk memisahkan fungsi setiap bagian program.      Bagian Model berisi class yang mengelola data dan objek sistem, seperti Kendaraan, Mobil, Motor, Pelanggan, Layanan, dan Transaksi.      Bagian View berisi MenuView yang digunakan untuk menampilkan menu dan menerima input dari pengguna, sedangkan bagian Controller          berisi MenuController yang mengatur alur dan proses program, seperti menambah dan menampilkan data. Dengan menerapkan MVC, program       menjadi lebih terstruktur dan setiap bagian memiliki fungsi yang jelas.
+
+   <img width="395" height="270" alt="image" src="https://github.com/user-attachments/assets/965ca434-6573-442d-9f2a-9c9c9cc366cc" />
+
+2. Polymorphism - Overriding
+
+   Contoh Pada program ini, polymorphism berupa overriding diterapkan pada method tampilkanData(). Class Mobil meng-override method         tampilkanData() yang berasal dari superclass Kendaraan dengan menggunakan anotasi @Override. Di dalam method                             tersebut,super.tampilkanData() digunakan untuk menampilkan data umum kendaraan, kemudian ditambahkan data khusus seperti jenis           kendaraan dan jumlah roda. Dengan demikian, method yang sama dapat memiliki perilaku yang berbeda sesuai dengan subclass yang            digunakan.
+
+   <img width="438" height="167" alt="image" src="https://github.com/user-attachments/assets/d853c61b-bf70-4fbc-940a-c5538566528e" />
+   
