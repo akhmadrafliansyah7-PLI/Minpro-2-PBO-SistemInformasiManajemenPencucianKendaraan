@@ -69,7 +69,7 @@ dari program. Pengguna dapat memilih salah satu menu dengan memasukkan angka ses
 
 2. Inheritance
 
-   Inheritance diterapkan dengan menjadikan class Kendaraan sebagai superclass, kemudian class Mobil dan Motor sebagai subclass. Class      Mobil dan Motor menggunakan extends Kendaraan sehingga dapat mewarisi atribut dan method yang terdapat pada class Kendaraan. Selain      itu, masing-masing subclass memiliki atribut khusus, yaitu jumlahRoda pada Mobil dan cc pada Motor.
+   Inheritance diterapkan dengan menjadikan class Kendaraan sebagai superclass, kemudian class Mobil dan Motor sebagai subclass. Class      Mobil dan Motor menggunakan extends Kendaraan sehingga dapat mewarisi atribut dan method yang terdapat pada class Kendaraan.
 
    - Mobil
 
