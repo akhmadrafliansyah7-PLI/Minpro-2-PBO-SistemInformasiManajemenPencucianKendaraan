@@ -39,4 +39,16 @@ dari program. Pengguna dapat memilih salah satu menu dengan memasukkan angka ses
    
    Pada menu **Tampilkan Data Pencucian**, sistem akan memeriksa apakah terdapat data transaksi di dalam `ArrayList`. Jika belum            terdapat data, sistem akan menampilkan informasi bahwa belum ada data pencucian. Jika terdapat data, sistem menggunakan perulangan       untuk mengambil setiap transaksi dan menampilkan informasi transaksi, pelanggan, kendaraan, serta layanan yang dipilih.
 
+   <img width="272" height="627" alt="image" src="https://github.com/user-attachments/assets/1c09b457-8d12-41da-bdd6-e4fd154b8927" />
+
+3. Ubah Data Pencucian
+   
+   Pada menu **Ubah Data Pencucian** pengguna diminta memasukkan ID transaksi yang ingin diubah. Sistem kemudian mencari ID tersebut di     dalam `ArrayList`. Jika ID ditemukan, pengguna dapat memasukkan data baru untuk nama pelanggan, nomor telepon, nomor plat kendaraan ,    merk kendaraan, warna kendaraan, jenis kendaraan, dan layanan kendaraan. Data tersebut kemudian diperbarui menggunakan setter yang       terdapat pada masing-masing class. Jika ID transaksi tidak ditemukan, sistem akan menampilkan pesan bahwa data tidak ditemukan.
+
+   <img width="271" height="617" alt="image" src="https://github.com/user-attachments/assets/34701ebd-a97f-4d33-b697-7433ccdd7320" />
+
+4. Hapus Data Pencucian
+   
+   Pada menu **Hapus Data Pencucian**, pengguna memasukkan ID transaksi yang ingin dihapus. Sistem mencari transaksi berdasarkan ID         tersebut. Jika transaksi ditemukan, data akan dihapus dari `ArrayList`. Jika ID tidak ditemukan, sistem akan menampilkan pesan bahwa     data tidak ditemukan.
+
    
