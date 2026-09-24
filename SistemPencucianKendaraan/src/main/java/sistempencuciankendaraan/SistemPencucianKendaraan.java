@@ -18,6 +18,7 @@ public class SistemPencucianKendaraan {
         MenuView View = new MenuView();
         MenuController Controller = new MenuController(View);
         
+        Controller.dataDummy();
         Controller.jalankanProgram();
     }
 }

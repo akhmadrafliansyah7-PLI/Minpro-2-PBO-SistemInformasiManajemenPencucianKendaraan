@@ -27,6 +27,34 @@ public class MenuController {
         this.view = view;
         this.daftarTransaksi = new ArrayList<>();
     }
+    public void dataDummy(){
+        Pelanggan pelanggan = new Pelanggan(
+            "PL001",
+            "Rapli",
+            "089690744311"
+        );
+        
+        Kendaraan kendaraan = new Kendaraan(
+            "KT0897",
+            "Honda",
+            "Putih"
+        );
+        
+        Layanan layanan = new Layanan(
+            "LY004",
+            "Cuci Premium Mobil",
+            75000
+        );
+        
+        Transaksi transaksi = new Transaksi(
+            "TL001",
+            pelanggan,
+            kendaraan,
+            layanan
+        );
+        
+daftarTransaksi.add(transaksi);
+    }
     public void jalankanProgram(){
         
         int pilihan;
