@@ -34,10 +34,11 @@ public class MenuController {
             "089690744311"
         );
         
-        Kendaraan kendaraan = new Kendaraan(
+        Kendaraan kendaraan = new Mobil(
             "KT0897",
             "Honda",
-            "Putih"
+            "Putih",
+            4
         );
         
         Layanan layanan = new Layanan(
