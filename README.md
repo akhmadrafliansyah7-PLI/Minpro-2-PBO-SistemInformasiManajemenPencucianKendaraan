@@ -51,4 +51,30 @@ dari program. Pengguna dapat memilih salah satu menu dengan memasukkan angka ses
    
    Pada menu **Hapus Data Pencucian**, pengguna memasukkan ID transaksi yang ingin dihapus. Sistem mencari transaksi berdasarkan ID         tersebut. Jika transaksi ditemukan, data akan dihapus dari `ArrayList`. Jika ID tidak ditemukan, sistem akan menampilkan pesan bahwa     data tidak ditemukan.
 
+   <img width="246" height="284" alt="image" src="https://github.com/user-attachments/assets/6719a602-58de-4956-b72f-aebff07182f5" />
+
+5. Keluar dari Program
    
+   Setelah setiap proses selesai, program kembali menampilkan menu utama sehingga pengguna dapat memilih proses lainnya. Program akan       terus berjalan selama pengguna belum memilih menu **Keluar**. Ketika pengguna memilih menu keluar, program akan menampilkan pesan        bahwa program selesai dan menghentikan proses.
+
+   <img width="250" height="190" alt="image" src="https://github.com/user-attachments/assets/9305a3db-ca4e-4bd3-9138-36e5f0609500" />
+
+## Encapsulation dan Inheritance
+
+1. Encapsulation
+   
+   Encapsulation diterapkan dengan membatasi akses langsung terhadap atribut pada class menggunakan access modifier private. Contohnya      pada class Pelanggan, atribut idPelanggan, namaPelanggan, dan noTelepon dibuat private sehingga tidak dapat diakses secara langsung      dari class lain. Untuk mengambil nilai dari atribut tersebut digunakan method getter, seperti getIdPelanggan(), getNamaPelanggan(),      dan getNoTelepon(). Dengan demikian, data pada objek Pelanggan dapat terlindungi dan akses terhadap data dilakukan melalui method        yang telah disediakan.
+
+   <img width="612" height="566" alt="image" src="https://github.com/user-attachments/assets/b4697fbf-8a66-480c-9e6b-feae72dd66ed" />
+
+2. Inheritance
+
+   Inheritance diterapkan dengan menjadikan class Kendaraan sebagai superclass, kemudian class Mobil dan Motor sebagai subclass. Class      Mobil dan Motor menggunakan extends Kendaraan sehingga dapat mewarisi atribut dan method yang terdapat pada class Kendaraan. Selain      itu, masing-masing subclass memiliki atribut khusus, yaitu jumlahRoda pada Mobil dan cc pada Motor.
+
+   - Mobil
+
+   <img width="348" height="19" alt="image" src="https://github.com/user-attachments/assets/4539d74b-0b4a-4445-a3ac-972e85dbd496" />
+
+   - Motor
+  
+   <img width="327" height="17" alt="image" src="https://github.com/user-attachments/assets/c180bf23-c7b1-4b11-badc-54ee6863e010" />
