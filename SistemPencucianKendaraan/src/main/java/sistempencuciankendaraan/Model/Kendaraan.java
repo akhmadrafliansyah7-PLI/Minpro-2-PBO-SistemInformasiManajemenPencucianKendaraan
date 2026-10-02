@@ -18,6 +18,7 @@ public class Kendaraan {
         this.noPlat = noPlat;
         this.merk = merk;
         this.warna = warna;
+        System.out.println("\n=== Tambah Data Pencucian ===");
     }
     public String getNoPlat(){
         return noPlat;
