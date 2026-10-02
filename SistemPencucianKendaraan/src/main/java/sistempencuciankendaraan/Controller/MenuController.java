@@ -40,6 +40,7 @@ public class MenuController {
             "Putih",
             4
         );
+        System.out.println("\n=== Tambah Data Pencucian ===");
         
         Layanan layanan = new Layanan(
             "LY004",
